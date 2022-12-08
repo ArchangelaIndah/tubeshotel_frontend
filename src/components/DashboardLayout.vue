@@ -1,7 +1,6 @@
 <template>
-    <div class="dashboard">
-        
     <v-card class="overflow-hidden">
+    <div class="header">
       <v-app-bar
         absolute
         color="teal lighten-3"
@@ -11,8 +10,9 @@
         scroll-target="#scrolling-techniques-4"
       >
         <v-app-bar-nav-icon></v-app-bar-nav-icon>
-  
-        <v-toolbar-title >A Hotel</v-toolbar-title>
+        
+        <v-spacer></v-spacer>
+        <v-toolbar-title align="center">A Hotel</v-toolbar-title>
   
         <v-spacer></v-spacer>
   
@@ -30,11 +30,16 @@
       </v-app-bar>
       <v-sheet
         id="scrolling-techniques-4"
-        class="overflow-y-auto"
-        max-height="600"
       >
         <v-container style="height: 1000px;"></v-container>
       </v-sheet>
-    </v-card>
     </div>
+    </v-card>
   </template>
+
+<style>
+.fontheader{
+   text-align: centers;
+}
+
+</style>
